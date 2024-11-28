@@ -1,13 +1,31 @@
-# :earth_americas: Aplicación para la transformación de coordenadas
+
+
+<h1 id="about"> :earth_americas: Aplicación para la transformación de coordenadas </h1>
+<div align="center">
+<!--     <a href="https://github.com/devicons/devicon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg" alt="Streamlit Logo" height="140" />
+    </a> -->
+    <h3 align="left">
+        Transformar los sistemas de coordenas nunca habia sido tan sencillo
+    </h3>
+    <p align="center">
+        <h2>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg" 
+                 alt="Demo2" 
+                 height="60" /> <a href="https://j4tekdygvbbhuhdkulpkov.streamlit.app/" target="_blank">Demo</a>
+        </h2>
+    </p>
+
+</div>
 
 La aplicación permite realizar cambios en sistemas de coordenadas a partir de plantillas de calculos (xlsx). 
 Antes de descargar el archivo procesado, es sugerible visualizar el mapa interactivo y corroborar la correcta carga de datos y posibles errores en los datos de entrada.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://j4tekdygvbbhuhdkulpkov.streamlit.app/)
+   
 
 Nota: la aplicación se encuentra en desarrollo, la version disponible es una versión preliminar. 
 
-### Correr localmente la aplicacion
+<h2 id="Run_locally">Correr localmente la aplicacion</h2>
 
 1. Instalar las dependencias
 
