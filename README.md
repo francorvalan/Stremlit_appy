@@ -1,4 +1,4 @@
-# :earth_americas: Transformación de coordenadas
+# :earth_americas: Aplicación para la transformación de coordenadas
 
 La aplicación permite realizar cambios en sistemas de coordenadas a partir de plantillas de calculos (xlsx). 
 Antes de descargar el archivo procesado, es sugerible visualizar el mapa interactivo y corroborar la correcta carga de datos y posibles errores en los datos de entrada.
@@ -19,3 +19,5 @@ Nota: la aplicación se encuentra en desarrollo, la version disponible es una ve
    ```
    $ streamlit run streamlit_app.py
    ```
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="80" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg" height="80" alt="streamlit logo"  style="margin-left: 12px;" />
