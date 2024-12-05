@@ -6,6 +6,7 @@ from io import BytesIO
 import folium
 from streamlit_folium import st_folium
 
+
 # streamlit run app.py
 # Diccionario de sistemas de referencia
 crs_dict = {
@@ -50,8 +51,27 @@ if uploaded_file:
     crs_destino = st.selectbox("Selecciona el sistema de referencia de destino", options=list(crs_dict.keys()), key="crs_destino")
 
     # Crear un GeoDataFrame con los datos de coordenadas y el CRS de origen
+    
     gdf = gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(df[x_col], df[y_col]), crs=f"EPSG:{crs_dict[crs_origen]}")
     
+    gdf_geograficas = gdf.to_crs("EPSG:4326")
+
+    # Visualizar en mapa interactivo
+    st.subheader("Mapa interactivo de los puntos transformados")
+    centro_mapa = [gdf_geograficas.geometry.y.mean(), gdf_geograficas.geometry.x.mean()]
+    mapa = folium.Map(location=centro_mapa, zoom_start=4)
+    
+    # Añadir marcadores con popups
+    for _, row in gdf_geograficas.iterrows():
+        popup_text = f"{row[id_col]}"  # Utiliza la columna seleccionada como popup
+        folium.Marker(
+            location=[row.geometry.y, row.geometry.x],
+            popup=popup_text
+        ).add_to(mapa)
+    
+    # Mostrar el mapa en Streamlit
+    st_folium(mapa, width=700, height=500)
+
     # Reproyectar al CRS de destino
     gdf = gdf.to_crs(f"EPSG:{crs_dict[crs_destino]}")
     
@@ -61,22 +81,6 @@ if uploaded_file:
 
     st.write("Datos transformados:")
     st.write(df.head())
-
-    # Visualizar en mapa interactivo
-    st.subheader("Mapa interactivo de los puntos transformados")
-    centro_mapa = [gdf.geometry.y.mean(), gdf.geometry.x.mean()]
-    mapa = folium.Map(location=centro_mapa, zoom_start=4)
-    
-    # Añadir marcadores con popups
-    for _, row in gdf.iterrows():
-        popup_text = f"{row[id_col]}"  # Utiliza la columna seleccionada como popup
-        folium.Marker(
-            location=[row.geometry.y, row.geometry.x],
-            popup=popup_text
-        ).add_to(mapa)
-    
-    # Mostrar el mapa en Streamlit
-    st_folium(mapa, width=700, height=500)
 
     # Descargar el DataFrame con coordenadas transformadas
     output = BytesIO()  # Crear un objeto BytesIO para el archivo en memoria
