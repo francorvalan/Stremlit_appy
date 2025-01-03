@@ -2,57 +2,57 @@
     {
         "Name":"Prospección",
         "Duración":"4",
-        "Start":"2006",
-        "End":"2010",
+        "Start":"1600",
+        "End":"1650",
         "Index":1
     },
     {
         "Name":"Exploración",
         "Duración":"12",
-        "Start":"2010",
-        "End":"2022",
+        "Start":"1650",
+        "End":"1675",
         "Index":2
     },
     {
         "Name":"Exploración Avanzada",
         "Duración":"2",
-        "Start":"2022",
-        "End":"2024",
+        "Start":"1675",
+        "End":"1705",
         "Index":3
     },
     {
         "Name":"Exploración Avanzada - Planta Piloto",
         "Duración":"2",
-        "Start":"2024",
-        "End":"2026",
+        "Start":"1705",
+        "End":"1725",
         "Index":4
     },
     {
         "Name":"PFS",
         "Duración":"2",
-        "Start":"2026",
-        "End":"2028",
+        "Start":"1725",
+        "End":"1740",
         "Index":5
     },
     {
         "Name":"FS",
         "Duración":"1",
-        "Start":"2028",
-        "End":"2029",
+        "Start":"1740",
+        "End":"1755",
         "Index":6
     },
     {
         "Name":"Contrato EPC",
         "Duración":"1,5",
-        "Start":"2029",
-        "End":"2030,5",
+        "Start":"1755",
+        "End":"1775,5",
         "Index":7
     },
     {
         "Name":"Explotación",
         "Duración":"9,5",
-        "Start":"2030,5",
-        "End":"2040",
+        "Start":"1775,5",
+        "End":"1800",
         "Index":8
     }
 ]
