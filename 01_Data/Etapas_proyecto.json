@@ -1,0 +1,58 @@
+[
+    {
+        "Name":"Prospección",
+        "Duración":"4",
+        "Start":"2006",
+        "End":"2010",
+        "Index":1
+    },
+    {
+        "Name":"Exploración",
+        "Duración":"12",
+        "Start":"2010",
+        "End":"2022",
+        "Index":2
+    },
+    {
+        "Name":"Exploración Avanzada",
+        "Duración":"2",
+        "Start":"2022",
+        "End":"2024",
+        "Index":3
+    },
+    {
+        "Name":"Exploración Avanzada - Planta Piloto",
+        "Duración":"2",
+        "Start":"2024",
+        "End":"2026",
+        "Index":4
+    },
+    {
+        "Name":"PFS",
+        "Duración":"2",
+        "Start":"2026",
+        "End":"2028",
+        "Index":5
+    },
+    {
+        "Name":"FS",
+        "Duración":"1",
+        "Start":"2028",
+        "End":"2029",
+        "Index":6
+    },
+    {
+        "Name":"Contrato EPC",
+        "Duración":"1,5",
+        "Start":"2029",
+        "End":"2030,5",
+        "Index":7
+    },
+    {
+        "Name":"Explotación",
+        "Duración":"9,5",
+        "Start":"2030,5",
+        "End":"2040",
+        "Index":8
+    }
+]
